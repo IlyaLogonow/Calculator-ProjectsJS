@@ -1,15 +1,15 @@
 :root {
   /*COLOR*/
   /*dark thee*/
-  --dark-primary: #FBFBFB;
-  --dark-history: rgba(55, 55, 55, 0.5);
+  --dark-primary: #FBFBFB; 
+  --dark-history: rgba(251, 251, 251, 0.5);
   --dark-display: linear-gradient(167.43deg, #212224 0%, #252628 22.56%, #000309 98.49%);;
   --dark-actions: linear-gradient(244.38deg, #42869B 8.14%, #2A7DA1 27.9%, #1C437D 56.94%, #172852 84.11%);;
   --dark-bg-elem: rgba(5, 5, 5, 0.3);
 
   /*light theme*/
   --light-primary: #373737;
-  --light-history: rgba(251, 251, 251, 0.5);;
+  --light-history: rgba(55, 55, 55, 0.5);
   --light-display: linear-gradient(166.34deg, #FEFEFE 0%, #F9F9F9 12.84%, #F3F3F3 32.53%, #E5E5E5 100%);
   --light-actions: linear-gradient(244.38deg, #9EE8FF 8.14%, #5ACEFF 27.9%, #79AFFF 56.94%, #2D5FDE 84.11%);;
   --light-bg-elem: rgba(255, 255, 255, 0.3);
@@ -45,6 +45,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: -webkit-linear-gradient(90deg, #fefefe,#79afff,#79afff,#79afff,#fefefe);/* Chrome 10-25, Safari 5.1-6 */                          
+  background: linear-gradient(90deg, #fefefe,#79afff,#79afff,#79afff,#fefefe);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 }
 
 html {
@@ -72,7 +74,7 @@ html {
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
-  color: var(--dark-history);
+  color: var(--light-history);
 }
 
 .calculator__total {
@@ -121,6 +123,13 @@ html {
   height: var(--size);
   background: var(--light-bg-elem);
   border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.calculator__col:hover,
+.calculator__col:active,
+.calculator__col:focus {
+  transform: scale(1.2);
 }
 
 .calculator__col img {
@@ -128,3 +137,26 @@ html {
   height: var(--size-svg);
   color: var(--light-primary);
 }
+
+/*DARK-THEE*/
+.dark-thee {
+  background: -webkit-linear-gradient(90deg, #212224,#212224,#172852,#212224,#212224);/* Chrome 10-25, Safari 5.1-6 */                         
+  background: linear-gradient(90deg, #212224,#212224,#172852,#212224,#212224);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.dark-thee .calculator {
+  background: var(--dark-display);
+}
+.dark-thee .calculator__history {
+  color: var(--dark-history);
+}
+.dark-thee .calculator__total {
+  color: var(--dark-primary);
+}
+.dark-thee .calculator__actions {
+  color: var(--dark-primary);
+  background: var(--dark-actions);
+}
+.dark-thee .calculator__col {
+  background: var(--dark-bg-elem);
+}
+
