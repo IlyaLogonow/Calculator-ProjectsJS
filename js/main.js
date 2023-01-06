@@ -1,4 +1,5 @@
 const calculator = document.querySelector('.calculator');
+const history = [];
 
 calculator.addEventListener('click', function(event) {
     const target = event.target;

@@ -136,6 +136,7 @@ html {
   width: var(--size-svg);
   height: var(--size-svg);
   color: var(--light-primary);
+  pointer-events: none;
 }
 
 /*DARK-THEE*/
