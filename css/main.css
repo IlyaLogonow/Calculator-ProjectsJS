@@ -139,7 +139,7 @@ html {
   pointer-events: none;
 }
 
-/*DARK-THEE*/
+  /*DARK-THEE*/
 .dark-thee {
   background: -webkit-linear-gradient(90deg, #212224,#212224,#172852,#212224,#212224);/* Chrome 10-25, Safari 5.1-6 */                         
   background: linear-gradient(90deg, #212224,#212224,#172852,#212224,#212224);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
